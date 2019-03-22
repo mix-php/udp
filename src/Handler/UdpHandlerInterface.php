@@ -6,11 +6,11 @@ use Mix\Udp\ClientInfo;
 use Mix\Udp\UdpSender;
 
 /**
- * Interface HandlerInterface
+ * Interface UdpHandlerInterface
  * @package Mix\Udp\Handler
  * @author LIUJIAN <coder.keda@gmail.com>
  */
-interface HandlerInterface
+interface UdpHandlerInterface
 {
 
     /**
