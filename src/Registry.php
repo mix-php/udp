@@ -4,6 +4,7 @@ namespace Mix\Udp;
 
 use Mix\Core\Component\ComponentInterface;
 use Mix\Core\Component\AbstractComponent;
+use Mix\Udp\Handler\UdpHandlerInterface;
 
 /**
  * Class Registry
@@ -21,16 +22,19 @@ class Registry extends AbstractComponent
 
     /**
      * 处理者
-     * @var \Mix\Udp\Handler\HandlerInterface
+     * @var \Mix\Udp\Handler\UdpHandlerInterface
      */
     public $handler;
 
     /**
      * 获取处理器
-     * @return \Mix\Udp\Handler\HandlerInterface
+     * @return UdpHandlerInterface
      */
     public function getHandler()
     {
+        if (!($this->handler instanceof UdpHandlerInterface)) {
+            throw new \RuntimeException("{$handlerClass} type is not 'Mix\Udp\Handler\UdpHandlerInterface'");
+        }
         return $this->handler;
     }
 
