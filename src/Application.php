@@ -2,8 +2,6 @@
 
 namespace Mix\Udp;
 
-use Mix\Core\Application\ComponentInitializeTrait;
-
 /**
  * Class Application
  * @package Mix\Udp
@@ -11,8 +9,6 @@ use Mix\Core\Application\ComponentInitializeTrait;
  */
 class Application extends \Mix\Core\Application
 {
-
-    use ComponentInitializeTrait;
 
     /**
      * 执行监听数据
