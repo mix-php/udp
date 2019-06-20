@@ -3,7 +3,7 @@
 namespace Mix\Udp;
 
 use Mix\Core\Component\ComponentInterface;
-use Mix\Core\Component\AbstractComponent;
+use Mix\Component\AbstractComponent;
 use Mix\Udp\Handler\UdpHandlerInterface;
 
 /**
