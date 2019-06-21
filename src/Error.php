@@ -3,7 +3,7 @@
 namespace Mix\Udp;
 
 use Mix\Component\AbstractComponent;
-use Mix\Core\Component\ComponentInterface;
+use Mix\Component\ComponentInterface;
 use Mix\Helper\JsonHelper;
 
 /**

@@ -2,7 +2,7 @@
 
 namespace Mix\Udp;
 
-use Mix\Core\Component\ComponentInterface;
+use Mix\Component\ComponentInterface;
 use Mix\Component\AbstractComponent;
 use Mix\Udp\Handler\UdpHandlerInterface;
 
